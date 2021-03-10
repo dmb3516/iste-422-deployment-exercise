@@ -1,0 +1,19 @@
+ALL: clean build run
+	@echo "ALL completed!"
+
+build: 
+	gcc -c build.sh
+	javac *.java
+
+test:	build 
+	echo "Running unit tests..."
+	#tells javac to look into the build
+	java -cp ./build:.:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore EdgeConnectorTest
+
+
+run: 	build #*.class
+	echo "Run all class"
+
+clean: 
+	echo "Cleaning existing classes..."
+	rm -f *.class		
