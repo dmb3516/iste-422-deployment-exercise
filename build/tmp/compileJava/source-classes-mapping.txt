@@ -1,13 +1,13 @@
-EdgeConnector.java
- EdgeConnector
 ExampleFileFilter.java
  ExampleFileFilter
+EdgeConnector.java
+ EdgeConnector
 EdgeConvertFileParser.java
  EdgeConvertFileParser
-CreateDDLMySQL.java
- CreateDDLMySQL
 EdgeField.java
  EdgeField
+CreateDDLMySQL.java
+ CreateDDLMySQL
 EdgeConvertCreateDDL.java
  EdgeConvertCreateDDL
 EdgeTable.java

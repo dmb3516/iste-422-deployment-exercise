@@ -1,35 +1,31 @@
+
 plugins {
-	id 'base'
-	id 'java'
-	id 'application'
+    id 'java'
+    id 'application'
 }
 
-import org.gradle.distribution.DownloadGradle
-version '1.0'
-
-task downloadGradle(type: DownloadGradle) {
-    description = 'Downloads the Gradle distribution with a given version.'
-    gradleVersion = '6.1'
-}
+group 'edu.rit.iste-422'
+version '1.0-SNAPSHOT'
 
 ext {
-    javaMainClass = 'EdgeConnectorTest'
+    javaMainClass = 'RunEdgeConvert'
 }
 
 test {
-    useJUnitPlatform()
+    testLogging.showStandardStreams = true
 }
 
 application {
     mainClassName = javaMainClass
 }
 
-repositories{
-	mavenCentral()
+repositories {
+    mavenCentral()
 }
 
+
 dependencies {
-   testImplementation: 'org.junit.Assert.*'
-   testImplementation: 'org.junit.Before'
-   testImplementation: 'org.junit.Test'
+
+    testImplementation 'junit:junit:4.12'
+
 }
