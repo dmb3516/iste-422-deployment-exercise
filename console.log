@@ -1,0 +1,91 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources
+> Task :classes
+
+> Task :run
+02:35:39.735 [main] INFO  RunEdgeConvert - RunEdgeConverts run for GUI
+02:36:27.841 [AWT-EventQueue-0] INFO  EdgeConvertGUI - Opening EDG file.
+02:36:31.775 [AWT-EventQueue-0] INFO  EdgeTable - EdgeTable runs.
+02:36:31.825 [AWT-EventQueue-0] INFO  EdgeTable - EdgeTable runs.
+02:36:31.850 [AWT-EventQueue-0] INFO  EdgeField - EdgeField runs.
+02:36:31.866 [AWT-EventQueue-0] INFO  EdgeField - EdgeField runs.
+02:36:31.919 [AWT-EventQueue-0] INFO  EdgeField - EdgeField runs.
+02:36:31.940 [AWT-EventQueue-0] INFO  EdgeField - EdgeField runs.
+02:36:31.950 [AWT-EventQueue-0] INFO  EdgeField - EdgeField runs.
+02:36:31.952 [AWT-EventQueue-0] INFO  EdgeField - EdgeField runs.
+02:36:32.022 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+02:36:32.023 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+02:36:32.027 [AWT-EventQueue-0] INFO  EdgeField - EdgeField runs.
+02:36:32.042 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+02:36:32.044 [AWT-EventQueue-0] INFO  EdgeTable - EdgeTable runs.
+02:36:32.045 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+02:36:32.046 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+02:36:32.047 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+02:36:32.048 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+02:36:32.122 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+02:36:32.132 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+02:36:32.144 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+ExampleFileFilter.class
+EdgeConvertCreateDDL.class
+EdgeTable.class
+EdgeField.class
+EdgeConnector.class
+EdgeConvertGUI$1.class
+EdgeConvertGUI$2.class
+EdgeConvertGUI$3.class
+EdgeConvertGUI$4.class
+EdgeConvertGUI$5.class
+EdgeConvertGUI$6.class
+EdgeConvertGUI$7.class
+EdgeConvertGUI$8.class
+EdgeConvertGUI$9.class
+EdgeConvertGUI$10.class
+EdgeConvertGUI$11.class
+EdgeConvertGUI$12.class
+EdgeConvertGUI$13.class
+EdgeConvertGUI$14.class
+EdgeConvertGUI$15.class
+EdgeConvertGUI$EdgeRadioButtonListener.class
+EdgeConvertGUI$EdgeWindowListener.class
+EdgeConvertGUI$CreateDDLButtonListener.class
+EdgeConvertGUI$EdgeMenuListener.class
+EdgeConvertGUI.class
+EdgeConvertFileParser.class
+RunEdgeConvert.class
+CreateDDLMySQL.class
+ExampleFileFilter.class
+EdgeConvertCreateDDL.class
+EdgeTable.class
+EdgeField.class
+EdgeConnector.class
+EdgeConvertGUI$1.class
+EdgeConvertGUI$2.class
+EdgeConvertGUI$3.class
+EdgeConvertGUI$4.class
+EdgeConvertGUI$5.class
+EdgeConvertGUI$6.class
+EdgeConvertGUI$7.class
+EdgeConvertGUI$8.class
+EdgeConvertGUI$9.class
+EdgeConvertGUI$10.class
+EdgeConvertGUI$11.class
+EdgeConvertGUI$12.class
+EdgeConvertGUI$13.class
+EdgeConvertGUI$14.class
+EdgeConvertGUI$15.class
+EdgeConvertGUI$EdgeRadioButtonListener.class
+EdgeConvertGUI$EdgeWindowListener.class
+EdgeConvertGUI$CreateDDLButtonListener.class
+EdgeConvertGUI$EdgeMenuListener.class
+EdgeConvertGUI.class
+EdgeConvertFileParser.class
+RunEdgeConvert.class
+CreateDDLMySQL.class
+02:36:49.435 [AWT-EventQueue-0] INFO  CreateDDLMySQL - Generating MySQL Script
+02:36:49.631 [AWT-EventQueue-0] INFO  CreateDDLMySQL - Generating MySQL Script
+02:36:49.634 [AWT-EventQueue-0] INFO  CreateDDLMySQL - Generating MySQL Script
+02:36:49.651 [AWT-EventQueue-0] INFO  CreateDDLMySQL - MySQL script complete
+02:36:51.292 [AWT-EventQueue-0] INFO  EdgeConvertGUI - File exists and should be overwritten to save.
+
+BUILD SUCCESSFUL in 1m 32s
+3 actionable tasks: 2 executed, 1 up-to-date

@@ -4,8 +4,12 @@ import javax.swing.*;
 import javax.swing.event.*;
 import java.io.*;
 import java.util.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public abstract class EdgeConvertCreateDDL {
+	 public static Logger logger = LogManager.getLogger(EdgeConvertCreateDDL.class.getName());
+
    static String[] products = {"MySQL"};
    protected EdgeTable[] tables; //master copy of EdgeTable objects
    protected EdgeField[] fields; //master copy of EdgeField objects
@@ -18,20 +22,24 @@ public abstract class EdgeConvertCreateDDL {
       this.tables = tables;
       this.fields = fields;
       initialize();
+			logger.debug("EdgeConvertCreateDDL object successfully created and initialized.");
    } //EdgeConvertCreateDDL(EdgeTable[], EdgeField[])
    
    public EdgeConvertCreateDDL() { //default constructor with empty arg list for to allow output dir to be set before there are table and field objects
-      
+      logger.debug("Empty EdgeConvertCreateDDL object successfully created.");
    } //EdgeConvertCreateDDL()
 
    public void initialize() {
+		  logger.debug("Attempting initialization...");
       numBoundTables = new int[tables.length];
       maxBound = 0;
       sb = new StringBuffer();
 
+			logger.debug("Stepping through " + tables.length + " tables.");
       for (int i = 0; i < tables.length; i++) { //step through list of tables
          int numBound = 0; //initialize counter for number of bound tables
          int[] relatedFields = tables[i].getRelatedFieldsArray();
+				 logger.debug("Stepping through " + relatedFields.length + " fields in table " + i + ".");
          for (int j = 0; j < relatedFields.length; j++) { //step through related fields list
             if (relatedFields[j] != 0) {
                numBound++; //count the number of non-zero related fields
@@ -39,26 +47,35 @@ public abstract class EdgeConvertCreateDDL {
          }
          numBoundTables[i] = numBound;
          if (numBound > maxBound) {
+					  logger.debug("maxBound updated: " + maxBound + " -> " + numBound + ".");
             maxBound = numBound;
          }
       }
    }
    
    protected EdgeTable getTable(int numFigure) {
+		  logger.debug("Attempting to get table for numFigure " + numFigure + ".");
+		  logger.debug("Stepping through " + tables.length + " tables.");
       for (int tIndex = 0; tIndex < tables.length; tIndex++) {
          if (numFigure == tables[tIndex].getNumFigure()) {
+					 	logger.debug("Table match found at tIndex = " + tIndex + ".");
             return tables[tIndex];
          }
       }
+			logger.debug("No table match found, returning null.");
       return null;
    }
    
    protected EdgeField getField(int numFigure) {
+		  logger.debug("Attempting to get field for numFigure " + numFigure + ".");
+		  logger.debug("Stepping through " + fields.length + " fields.");
       for (int fIndex = 0; fIndex < fields.length; fIndex++) {
          if (numFigure == fields[fIndex].getNumFigure()) {
+					 logger.debug("Field match found at fIndex = " + fIndex + ".");
             return fields[fIndex];
          }
       }
+			logger.debug("No field match found, returning null.");
       return null;
    }
 

@@ -1,0 +1,155 @@
+2021-03-29 02:35:39.735 [main] INFO  RunEdgeConvert - RunEdgeConverts run for GUI
+2021-03-29 02:35:39.774 [main] DEBUG EdgeConvertGUI - EdgeConvertGUI object successfully created.
+2021-03-29 02:35:39.775 [main] DEBUG EdgeConvertGUI - Attempting to set LAF...
+2021-03-29 02:35:41.120 [main] DEBUG EdgeConvertGUI - LAF set successfully.
+2021-03-29 02:35:41.122 [main] DEBUG EdgeConvertGUI - Attempting to create DT Screen...
+2021-03-29 02:35:44.620 [main] DEBUG EdgeConvertGUI - DT Screen created successfully.
+2021-03-29 02:35:44.625 [main] DEBUG EdgeConvertGUI - Attempting to create DR Screen...
+2021-03-29 02:35:44.933 [main] DEBUG EdgeConvertGUI - DR Screen created successfully.
+2021-03-29 02:35:44.933 [main] DEBUG RunEdgeConvert - RunEdgeConvert is successfully completed.
+2021-03-29 02:36:27.841 [AWT-EventQueue-0] INFO  EdgeConvertGUI - Opening EDG file.
+2021-03-29 02:36:31.775 [AWT-EventQueue-0] INFO  EdgeTable - EdgeTable runs.
+2021-03-29 02:36:31.775 [AWT-EventQueue-0] DEBUG EdgeTable - EdgeTable object successfully created.
+2021-03-29 02:36:31.825 [AWT-EventQueue-0] INFO  EdgeTable - EdgeTable runs.
+2021-03-29 02:36:31.846 [AWT-EventQueue-0] DEBUG EdgeTable - EdgeTable object successfully created.
+2021-03-29 02:36:31.850 [AWT-EventQueue-0] INFO  EdgeField - EdgeField runs.
+2021-03-29 02:36:31.865 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField object successfully created.
+2021-03-29 02:36:31.866 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - New EdgeField object is added to arraylist.
+2021-03-29 02:36:31.866 [AWT-EventQueue-0] INFO  EdgeField - EdgeField runs.
+2021-03-29 02:36:31.918 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField object successfully created.
+2021-03-29 02:36:31.918 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - New EdgeField object is added to arraylist.
+2021-03-29 02:36:31.919 [AWT-EventQueue-0] INFO  EdgeField - EdgeField runs.
+2021-03-29 02:36:31.935 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField object successfully created.
+2021-03-29 02:36:31.939 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - New EdgeField object is added to arraylist.
+2021-03-29 02:36:31.940 [AWT-EventQueue-0] INFO  EdgeField - EdgeField runs.
+2021-03-29 02:36:31.949 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField object successfully created.
+2021-03-29 02:36:31.950 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - New EdgeField object is added to arraylist.
+2021-03-29 02:36:31.950 [AWT-EventQueue-0] INFO  EdgeField - EdgeField runs.
+2021-03-29 02:36:31.950 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField object successfully created.
+2021-03-29 02:36:31.951 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - New EdgeField object is added to arraylist.
+2021-03-29 02:36:31.952 [AWT-EventQueue-0] INFO  EdgeField - EdgeField runs.
+2021-03-29 02:36:31.953 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField object successfully created.
+2021-03-29 02:36:31.955 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - New EdgeField object is added to arraylist.
+2021-03-29 02:36:32.022 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+2021-03-29 02:36:32.023 [AWT-EventQueue-0] DEBUG EdgeConnector - EdgeConnector object successfully created.
+2021-03-29 02:36:32.023 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Connector entry is working.
+2021-03-29 02:36:32.023 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+2021-03-29 02:36:32.024 [AWT-EventQueue-0] DEBUG EdgeConnector - EdgeConnector object successfully created.
+2021-03-29 02:36:32.027 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Connector entry is working.
+2021-03-29 02:36:32.027 [AWT-EventQueue-0] INFO  EdgeField - EdgeField runs.
+2021-03-29 02:36:32.041 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField object successfully created.
+2021-03-29 02:36:32.042 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - New EdgeField object is added to arraylist.
+2021-03-29 02:36:32.042 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+2021-03-29 02:36:32.043 [AWT-EventQueue-0] DEBUG EdgeConnector - EdgeConnector object successfully created.
+2021-03-29 02:36:32.043 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Connector entry is working.
+2021-03-29 02:36:32.044 [AWT-EventQueue-0] INFO  EdgeTable - EdgeTable runs.
+2021-03-29 02:36:32.044 [AWT-EventQueue-0] DEBUG EdgeTable - EdgeTable object successfully created.
+2021-03-29 02:36:32.045 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+2021-03-29 02:36:32.045 [AWT-EventQueue-0] DEBUG EdgeConnector - EdgeConnector object successfully created.
+2021-03-29 02:36:32.046 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Connector entry is working.
+2021-03-29 02:36:32.046 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+2021-03-29 02:36:32.046 [AWT-EventQueue-0] DEBUG EdgeConnector - EdgeConnector object successfully created.
+2021-03-29 02:36:32.047 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Connector entry is working.
+2021-03-29 02:36:32.047 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+2021-03-29 02:36:32.048 [AWT-EventQueue-0] DEBUG EdgeConnector - EdgeConnector object successfully created.
+2021-03-29 02:36:32.048 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Connector entry is working.
+2021-03-29 02:36:32.048 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+2021-03-29 02:36:32.052 [AWT-EventQueue-0] DEBUG EdgeConnector - EdgeConnector object successfully created.
+2021-03-29 02:36:32.121 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Connector entry is working.
+2021-03-29 02:36:32.122 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+2021-03-29 02:36:32.123 [AWT-EventQueue-0] DEBUG EdgeConnector - EdgeConnector object successfully created.
+2021-03-29 02:36:32.132 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Connector entry is working.
+2021-03-29 02:36:32.132 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+2021-03-29 02:36:32.135 [AWT-EventQueue-0] DEBUG EdgeConnector - EdgeConnector object successfully created.
+2021-03-29 02:36:32.141 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Connector entry is working.
+2021-03-29 02:36:32.144 [AWT-EventQueue-0] INFO  EdgeConnector - EdgeConnector runs.
+2021-03-29 02:36:32.151 [AWT-EventQueue-0] DEBUG EdgeConnector - EdgeConnector object successfully created.
+2021-03-29 02:36:32.153 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Connector entry is working.
+2021-03-29 02:36:32.163 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Endpoint2: 7
+2021-03-29 02:36:32.171 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Table1: 0
+2021-03-29 02:36:32.176 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Endpoint1 Table assigned to field.
+2021-03-29 02:36:32.176 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Endpoint2: 8
+2021-03-29 02:36:32.179 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Table1: 0
+2021-03-29 02:36:32.179 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Endpoint1 Table assigned to field.
+2021-03-29 02:36:32.181 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Endpoint2: 11
+2021-03-29 02:36:32.182 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Table1: 1
+2021-03-29 02:36:32.182 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Endpoint1 Table assigned to field.
+2021-03-29 02:36:32.182 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Table1: 0
+2021-03-29 02:36:32.182 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Table2: 2
+2021-03-29 02:36:32.218 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Table1: 1
+2021-03-29 02:36:32.219 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Table2: 2
+2021-03-29 02:36:32.220 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Endpoint2: 3
+2021-03-29 02:36:32.221 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Endpoint2 Table assigned to field.
+2021-03-29 02:36:32.221 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Table2: 2
+2021-03-29 02:36:32.221 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Endpoint1: 5
+2021-03-29 02:36:32.222 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Table2: 2
+2021-03-29 02:36:32.222 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Endpoint2 Table assigned to field.
+2021-03-29 02:36:32.222 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Endpoint1: 6
+2021-03-29 02:36:32.222 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Table2: 1
+2021-03-29 02:36:32.222 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Endpoint2 Table assigned to field.
+2021-03-29 02:36:34.165 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Attempting to set output directory.
+2021-03-29 02:36:40.571 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Attempting initialization...
+2021-03-29 02:36:40.575 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Stepping through 3 tables.
+2021-03-29 02:36:40.632 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Stepping through 2 fields in table 0.
+2021-03-29 02:36:40.632 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Stepping through 2 fields in table 1.
+2021-03-29 02:36:40.632 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Stepping through 2 fields in table 2.
+2021-03-29 02:36:40.633 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - EdgeConvertCreateDDL object successfully created and initialized.
+2021-03-29 02:36:40.633 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - CreateDDLMySQL object created. EdgeTable and EdgeField objects populated.
+2021-03-29 02:36:40.633 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Displaying product names.
+2021-03-29 02:36:41.963 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Output directory set successfully.
+2021-03-29 02:36:47.117 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Attempting initialization...
+2021-03-29 02:36:47.117 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Stepping through 3 tables.
+2021-03-29 02:36:47.118 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Stepping through 2 fields in table 0.
+2021-03-29 02:36:47.118 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Stepping through 2 fields in table 1.
+2021-03-29 02:36:47.118 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Stepping through 2 fields in table 2.
+2021-03-29 02:36:47.118 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - EdgeConvertCreateDDL object successfully created and initialized.
+2021-03-29 02:36:47.118 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - CreateDDLMySQL object created. EdgeTable and EdgeField objects populated.
+2021-03-29 02:36:48.296 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Generating DB name...
+2021-03-29 02:36:49.429 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Database name 'MySQLDB'generated
+2021-03-29 02:36:49.434 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Current Table bound count: 0
+2021-03-29 02:36:49.435 [AWT-EventQueue-0] INFO  CreateDDLMySQL - Generating MySQL Script
+2021-03-29 02:36:49.437 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Current Table is STUDENT
+2021-03-29 02:36:49.438 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Attempting to get field for numFigure 7.
+2021-03-29 02:36:49.439 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Stepping through 7 fields.
+2021-03-29 02:36:49.439 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Field match found at fIndex = 4.
+2021-03-29 02:36:49.625 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Current Field Name: StudentSSN Data Type: 0
+2021-03-29 02:36:49.626 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Datatype is varchar of length 1
+2021-03-29 02:36:49.629 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Current field StudentSSN is NOT primary key
+2021-03-29 02:36:49.630 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Attempting to get field for numFigure 8.
+2021-03-29 02:36:49.630 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Stepping through 7 fields.
+2021-03-29 02:36:49.630 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Field match found at fIndex = 5.
+2021-03-29 02:36:49.630 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Current Field Name: StudentName Data Type: 0
+2021-03-29 02:36:49.631 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Datatype is varchar of length 1
+2021-03-29 02:36:49.631 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Current field StudentName is NOT primary key
+2021-03-29 02:36:49.631 [AWT-EventQueue-0] INFO  CreateDDLMySQL - Generating MySQL Script
+2021-03-29 02:36:49.631 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Current Table is FACULTY
+2021-03-29 02:36:49.632 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Attempting to get field for numFigure 11.
+2021-03-29 02:36:49.632 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Stepping through 7 fields.
+2021-03-29 02:36:49.632 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Field match found at fIndex = 6.
+2021-03-29 02:36:49.632 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Current Field Name: FacultyName Data Type: 0
+2021-03-29 02:36:49.632 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Datatype is varchar of length 1
+2021-03-29 02:36:49.633 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Current field FacultyName is NOT primary key
+2021-03-29 02:36:49.633 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Attempting to get field for numFigure 6.
+2021-03-29 02:36:49.633 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Stepping through 7 fields.
+2021-03-29 02:36:49.633 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Field match found at fIndex = 3.
+2021-03-29 02:36:49.633 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Current Field Name: FacSSN Data Type: 0
+2021-03-29 02:36:49.633 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Datatype is varchar of length 1
+2021-03-29 02:36:49.634 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Current field FacSSN is NOT primary key
+2021-03-29 02:36:49.634 [AWT-EventQueue-0] INFO  CreateDDLMySQL - Generating MySQL Script
+2021-03-29 02:36:49.635 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Current Table is COURSES
+2021-03-29 02:36:49.635 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Attempting to get field for numFigure 3.
+2021-03-29 02:36:49.635 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Stepping through 7 fields.
+2021-03-29 02:36:49.636 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Field match found at fIndex = 0.
+2021-03-29 02:36:49.636 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Current Field Name: Grade Data Type: 0
+2021-03-29 02:36:49.636 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Datatype is varchar of length 1
+2021-03-29 02:36:49.636 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Current field Grade is NOT primary key
+2021-03-29 02:36:49.636 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Attempting to get field for numFigure 5.
+2021-03-29 02:36:49.637 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Stepping through 7 fields.
+2021-03-29 02:36:49.637 [AWT-EventQueue-0] DEBUG EdgeConvertCreateDDL - Field match found at fIndex = 2.
+2021-03-29 02:36:49.637 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Current Field Name: Number Data Type: 0
+2021-03-29 02:36:49.637 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Datatype is varchar of length 1
+2021-03-29 02:36:49.651 [AWT-EventQueue-0] DEBUG CreateDDLMySQL - Current field Number is NOT primary key
+2021-03-29 02:36:49.651 [AWT-EventQueue-0] INFO  CreateDDLMySQL - MySQL script complete
+2021-03-29 02:36:49.731 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Attempting to write SQL...
+2021-03-29 02:36:51.292 [AWT-EventQueue-0] INFO  EdgeConvertGUI - File exists and should be overwritten to save.
+2021-03-29 02:36:52.361 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - SQL written successfully.

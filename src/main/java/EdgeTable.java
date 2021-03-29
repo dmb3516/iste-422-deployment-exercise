@@ -1,17 +1,25 @@
 import java.util.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class EdgeTable {
+	 public static Logger logger = LogManager.getLogger(EdgeTable.class.getName());
+
    private int numFigure;
    private String name;
    private ArrayList alRelatedTables, alNativeFields;
    private int[] relatedTables, relatedFields, nativeFields;
    
    public EdgeTable(String inputString) {
+	   logger.info("EdgeTable runs.");
+	   
       StringTokenizer st = new StringTokenizer(inputString, EdgeConvertFileParser.DELIM);
       numFigure = Integer.parseInt(st.nextToken());
       name = st.nextToken();
       alRelatedTables = new ArrayList();
       alNativeFields = new ArrayList();
+	
+      logger.debug("EdgeTable object successfully created.");
    }
    
    public int getNumFigure() {
@@ -117,6 +125,8 @@ public class EdgeTable {
          }
       }
       sb.append("\r\n}\r\n");
+
+      logger.debug("successfully completed");
       
       return sb.toString();
    }

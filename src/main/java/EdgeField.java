@@ -1,6 +1,10 @@
 import java.util.StringTokenizer;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class EdgeField {
+   public static Logger logger = LogManager.getLogger(EdgeField.class.getName());
+
    private int numFigure, tableID, tableBound, fieldBound, dataType, varcharValue;
    private String name, defaultValue;
    private boolean disallowNull, isPrimaryKey;
@@ -8,6 +12,8 @@ public class EdgeField {
    public static final int VARCHAR_DEFAULT_LENGTH = 1;
    
    public EdgeField(String inputString) {
+	logger.info("EdgeField runs.");
+
       StringTokenizer st = new StringTokenizer(inputString, EdgeConvertFileParser.DELIM);
       numFigure = Integer.parseInt(st.nextToken());
       name = st.nextToken();
@@ -19,6 +25,8 @@ public class EdgeField {
       defaultValue = "";
       varcharValue = VARCHAR_DEFAULT_LENGTH;
       dataType = 0;
+	
+	logger.debug("EdgeField object successfully created.");
    }
    
    public int getNumFigure() {

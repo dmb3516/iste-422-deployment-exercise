@@ -1,8 +1,13 @@
 import java.io.*;
 import java.util.*;
 import javax.swing.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class EdgeConvertFileParser {
+
+	public static Logger logger = LogManager.getLogger(EdgeConvertFileParser.class.getName());
+	
    //private String filename = "test.edg";
    private File parseFile;
    private FileReader fr;
@@ -53,6 +58,7 @@ public class EdgeConvertFileParser {
                if (style.startsWith("Relation")) { //presence of Relations implies lack of normalization
                   JOptionPane.showMessageDialog(null, "The Edge Diagrammer file\n" + parseFile + "\ncontains relations.  Please resolve them and try again.");
                   EdgeConvertGUI.setReadSuccess(false);
+		  logger.warn("Need to resolve the diagrammer file.");
                   break;
                } 
                if (style.startsWith("Entity")) {
@@ -69,6 +75,7 @@ public class EdgeConvertFileParser {
                if (text.equals("")) {
                   JOptionPane.showMessageDialog(null, "There are entities or attributes with blank names in this diagram.\nPlease provide names for them and try again.");
                   EdgeConvertGUI.setReadSuccess(false);
+		  logger.warn("Need to provide the names.");
                   break;
                }
                int escape = text.indexOf("\\");
@@ -87,6 +94,7 @@ public class EdgeConvertFileParser {
                   if (isTableDup(text)) {
                      JOptionPane.showMessageDialog(null, "There are multiple tables called " + text + " in this diagram.\nPlease rename all but one of them and try again.");
                      EdgeConvertGUI.setReadSuccess(false);
+				logger.warn("Rename the tables again.");
                      break;
                   }
                   alTables.add(new EdgeTable(numFigure + DELIM + text));
@@ -95,6 +103,7 @@ public class EdgeConvertFileParser {
                   tempField = new EdgeField(numFigure + DELIM + text);
                   tempField.setIsPrimaryKey(isUnderlined);
                   alFields.add(tempField);
+		  		logger.debug("New EdgeField object is added to arraylist.");
                }
                //reset flags
                isEntity = false;
@@ -124,6 +133,7 @@ public class EdgeConvertFileParser {
             } while (!currentLine.equals("}")); // this is the end of a Connector entry
             
             alConnectors.add(new EdgeConnector(numConnector + DELIM + endPoint1 + DELIM + endPoint2 + DELIM + endStyle1 + DELIM + endStyle2));
+	    			logger.debug("Connector entry is working.");
          } // if("Connector")
       } // while()
    } // parseEdgeFile()
@@ -139,26 +149,31 @@ public class EdgeConvertFileParser {
             if (endPoint1 == fields[fIndex].getNumFigure()) { //found endPoint1 in fields array
                connectors[cIndex].setIsEP1Field(true); //set appropriate flag
                fieldIndex = fIndex; //identify which element of the fields array that endPoint1 was found in
+	       logger.debug("Endpoint1: " + endPoint1);
             }
             if (endPoint2 == fields[fIndex].getNumFigure()) { //found endPoint2 in fields array
                connectors[cIndex].setIsEP2Field(true); //set appropriate flag
                fieldIndex = fIndex; //identify which element of the fields array that endPoint2 was found in
+	       	logger.debug("Endpoint2: " + endPoint2);
             }
          }
          for (int tIndex = 0; tIndex < tables.length; tIndex++) { //search tables array for endpoints
             if (endPoint1 == tables[tIndex].getNumFigure()) { //found endPoint1 in tables array
                connectors[cIndex].setIsEP1Table(true); //set appropriate flag
                table1Index = tIndex; //identify which element of the tables array that endPoint1 was found in
+	       	logger.debug("Table1: " + table1Index);
             }
             if (endPoint2 == tables[tIndex].getNumFigure()) { //found endPoint1 in tables array
                connectors[cIndex].setIsEP2Table(true); //set appropriate flag
                table2Index = tIndex; //identify which element of the tables array that endPoint2 was found in
+	       logger.debug("Table2: "+table2Index);
             }
          }
          
          if (connectors[cIndex].getIsEP1Field() && connectors[cIndex].getIsEP2Field()) { //both endpoints are fields, implies lack of normalization
             JOptionPane.showMessageDialog(null, "The Edge Diagrammer file\n" + parseFile + "\ncontains composite attributes. Please resolve them and try again.");
             EdgeConvertGUI.setReadSuccess(false); //this tells GUI not to populate JList components
+	    		logger.warn("ParseFile needs to be resolve.");
             break; //stop processing list of Connectors
          }
 
@@ -167,6 +182,7 @@ public class EdgeConvertFileParser {
                 (connectors[cIndex].getEndStyle2().indexOf("many") >= 0)) { //the connector represents a many-many relationship, implies lack of normalization
                JOptionPane.showMessageDialog(null, "There is a many-many relationship between tables\n\"" + tables[table1Index].getName() + "\" and \"" + tables[table2Index].getName() + "\"" + "\nPlease resolve this and try again.");
                EdgeConvertGUI.setReadSuccess(false); //this tells GUI not to populate JList components
+	       		logger.warn("Lack of normalization with tables, needs to be resolved.");
                break; //stop processing list of Connectors
             } else { //add Figure number to each table's list of related tables
                tables[table1Index].addRelatedTable(tables[table2Index].getNumFigure());
@@ -179,13 +195,16 @@ public class EdgeConvertFileParser {
             if (connectors[cIndex].getIsEP1Table()) { //endpoint1 is the table
                tables[table1Index].addNativeField(fields[fieldIndex].getNumFigure()); //add to the appropriate table's field list
                fields[fieldIndex].setTableID(tables[table1Index].getNumFigure()); //tell the field what table it belongs to
+	       	logger.debug("Endpoint1 Table assigned to field.");
             } else { //endpoint2 is the table
                tables[table2Index].addNativeField(fields[fieldIndex].getNumFigure()); //add to the appropriate table's field list
                fields[fieldIndex].setTableID(tables[table2Index].getNumFigure()); //tell the field what table it belongs to
+	       	logger.debug("Endpoint2 Table assigned to field.");
             }
          } else if (fieldIndex >=0) { //field has already been assigned to a table
             JOptionPane.showMessageDialog(null, "The attribute " + fields[fieldIndex].getName() + " is connected to multiple tables.\nPlease resolve this and try again.");
             EdgeConvertGUI.setReadSuccess(false); //this tells GUI not to populate JList components
+	    	logger.warn(fields[fieldIndex].getName() + "has multiple tables and already has been assigned.");
             break; //stop processing list of Connectors
          }
       } // connectors for() loop
@@ -249,6 +268,8 @@ public class EdgeConvertFileParser {
          }
          alFields.add(tempField);
       }
+
+      logger.info("Save file has been parsed");
    } // parseSaveFile()
 
    private void makeArrays() { //convert ArrayList objects into arrays of the appropriate Class type
@@ -298,6 +319,9 @@ public class EdgeConvertFileParser {
                this.parseSaveFile(); //parse the file
                br.close();
                this.makeArrays(); //convert ArrayList objects into arrays of the appropriate Class type
+
+               logger.info("The file has been successfully opened");
+
             } else { //the file chosen is something else
                JOptionPane.showMessageDialog(null, "Unrecognized file format");
             }
@@ -306,10 +330,13 @@ public class EdgeConvertFileParser {
       catch (FileNotFoundException fnfe) {
          System.out.println("Cannot find \"" + inputFile.getName() + "\".");
          System.exit(0);
+	 		logger.error(inputFile.getName() + " is not found.");
       } // catch FileNotFoundException
       catch (IOException ioe) {
          System.out.println(ioe);
-         System.exit(0);
+	 		logger.error("IOException: " + ioe);
+	 			 System.exit(0);
+
       } // catch IOException
    } // openFile()
 } // EdgeConvertFileHandler
