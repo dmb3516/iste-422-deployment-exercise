@@ -25,7 +25,7 @@ public abstract class EdgeConvertCreateDDL {
 			logger.debug("EdgeConvertCreateDDL object successfully created and initialized.");
    } //EdgeConvertCreateDDL(EdgeTable[], EdgeField[])
    
-   public EdgeConvertCreateDDL() { //default constructor with empty arg list for to allow output dir to be set before there are table and field objects
+   public EdgeConvertCreateDDL() { //default constructor with empty arg list for allowing output dir to be set before there are table and field objects
       logger.debug("Empty EdgeConvertCreateDDL object successfully created.");
    } //EdgeConvertCreateDDL()
 
